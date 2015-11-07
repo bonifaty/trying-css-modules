@@ -1,19 +1,24 @@
 var React = require('react');
 import styles from '../css/like-button.styl';
 
+// like // dislike // disabled
+
 var LikeButton = React.createClass({
     getInitialState() {
         return {
-            currentClassName: styles.basic
+            disabled: false,
+            active: false
         }
     },
     onClick() {
         this.setState({
-            currentClassName: styles.active
+            active: !this.state.active
         });
     },
     render() {
-        return (<button className={this.state.currentClassName} onClick={this.onClick} type="button">Like</button>);
+        var className = this.state.active ? styles.active : styles.normal;
+
+        return (<button className={className} onClick={this.onClick} type="button">Like</button>);
     }
 });
 
