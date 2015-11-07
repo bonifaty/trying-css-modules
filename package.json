@@ -1,0 +1,17 @@
+{
+  "name": "trying-css-modules",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "css-loader": "^0.22.0",
+    "jsx-loader": "^0.13.2",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "stylus-loader": "^1.4.2",
+    "webpack": "^1.12.3"
+  }
+}
