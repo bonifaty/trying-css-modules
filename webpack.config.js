@@ -6,7 +6,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.styl$/, loader: 'style-loader!css-loader?modules!stylus-loader' },
+            { test: /\.styl$/, loader: 'style-loader!css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]!stylus-loader' },
             { test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loader: "babel",
