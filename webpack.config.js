@@ -6,9 +6,14 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.jsx$/, loader: 'jsx-loader?harmony' },
             { test: /\.styl$/, loader: 'style-loader!css-loader?modules!stylus-loader' },
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader!jsx-loader?harmony" }
+            { test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: "babel",
+                query: {
+                    presets:['es2015','react']
+                }
+            }
         ]
     }
 };
