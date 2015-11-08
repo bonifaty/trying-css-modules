@@ -1,8 +1,38 @@
 .normal
-  border: 2px solid black
-  outline: none
+  outline: none;
+  padding: 4px 10px 4px 8px;
+  cursor: pointer;
+  background-color: #fff;
+  border: #ccc solid 1px;
+  border-radius: 4px;
+
+.icon
+  fill: #bbb;
+  width: 18px;
+  height: 20px;
+  vertical-align: top;
+  transform: scale(0.85);
+  transition: all 0.2s;
+
+.text
+  font-weight: bold;
+  font-family: 'Helvetica Neue',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
+
+.normal:hover
+  .icon
+    fill: #f99696;
+  .text
+    text-decoration: underline;
+
 
 .active
-  composes: normal
-  background-color: greenyellow
-  color: black
+  composes: normal;
+
+  .icon.icon
+    fill: #FF4343;
+    transform: scale(1);
+  .text
+    color: #444;

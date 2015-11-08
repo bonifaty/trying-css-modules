@@ -1,3 +1,4 @@
 node_modules
 assets/_
+!assets/_/js/app.js
 .idea

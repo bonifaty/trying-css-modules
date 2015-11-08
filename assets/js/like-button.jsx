@@ -1,12 +1,10 @@
 var React = require('react');
+var HeartIcon = require('./heart-icon.jsx');
 import styles from '../css/like-button.styl';
-
-// like // dislike // disabled
 
 var LikeButton = React.createClass({
     getInitialState() {
         return {
-            disabled: false,
             active: false
         }
     },
@@ -18,7 +16,9 @@ var LikeButton = React.createClass({
     render() {
         var className = this.state.active ? styles.active : styles.normal;
 
-        return (<button className={className} onClick={this.onClick} type="button">Like</button>);
+        return (<button className={className} onClick={this.onClick} type="button">
+            <HeartIcon className={styles.icon} /> <span className={styles.text}>Like it!</span>
+        </button>);
     }
 });
 
