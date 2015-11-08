@@ -1,7 +1,7 @@
 module.exports = {
     entry: ['./assets/js/index.js'],
     output: {
-        path: './assets/_/js',
+        path: './assets/compiled/js',
         filename: 'app.js'
     },
     module: {

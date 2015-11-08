@@ -1,4 +1,4 @@
 node_modules
 assets/_
-!assets/_/js/app.js
+!assets/compiled/js/app.js
 .idea
